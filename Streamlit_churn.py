@@ -27,11 +27,12 @@ features =[
 
 
 # ⬇️ ---------- Centered Logo ----------
-logo = Image.open("download.png")  # put the PNG in the same folder as this script
-col_l, col_c, col_r = st.columns([1, 2, 1])  # create 3 columns
-with col_c:
-    st.image(logo, use_column_width=False)    # middle column = centered logo
-st.markdown("Use the sliders below to simulate a customer's behavior and predict churn risk.")
+logo = Image.open("download.png")   # make sure the PNG is in the same folder
+st.image(logo, width=240)           # tweak width to taste
+# ----------------------------------------------
+st.markdown(
+    "Use the sliders below to simulate a customer's behavior and predict churn risk."
+)
 
 # ------------------ User Inputs ------------------
 st.sidebar.header("🎛️ Customer Behavior")
