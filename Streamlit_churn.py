@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 from PIL import Image 
 
-# ------------------ Page Setup ------------------
+# ------------------ Page Setup and add logo ------------------
 st.set_page_config(page_title="Churn Prediction", layout="wide")
 logo = Image.open("download.png")   # make sure the PNG is in the same folder
 st.image(logo, width=240)           # tweak width to taste
@@ -30,13 +30,6 @@ features =[
 ]
 
 
-# ⬇️ ---------- Centered Logo ----------
-logo = Image.open("download.png")   # make sure the PNG is in the same folder
-st.image(logo, width=240)           # tweak width to taste
-# ----------------------------------------------
-st.markdown(
-    "Use the sliders below to simulate a customer's behavior and predict churn risk."
-)
 
 # ------------------ User Inputs ------------------
 st.sidebar.header("🎛️ Customer Behavior")
