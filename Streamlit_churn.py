@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+from PIL import Image 
 
 # ------------------ Page Setup ------------------
 st.set_page_config(page_title="Churn Prediction", layout="wide")
