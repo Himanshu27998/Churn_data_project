@@ -6,7 +6,11 @@ from PIL import Image
 
 # ------------------ Page Setup ------------------
 st.set_page_config(page_title="Churn Prediction", layout="wide")
+logo = Image.open("download.png")   # make sure the PNG is in the same folder
+st.image(logo, width=240)           # tweak width to taste
 st.title("📉 Customer Churn Predictor")
+# ----------------------------------------------
+
 st.markdown("Use the sliders below to simulate a customer's behavior and predict churn risk.")
 
 # ------------------ Load Artifacts ------------------
