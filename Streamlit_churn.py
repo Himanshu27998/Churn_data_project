@@ -99,7 +99,7 @@ with col2:
         st.error(f"Risk Tier: {risk_tier}")
 
 with col3:
-    st.info(📌 Recommendation Action :")
+    st.info("📌 Recommendation Action :")
     for r in rec:
         st.markdown(f"- {r}")
 
